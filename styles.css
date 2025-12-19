@@ -1,0 +1,73 @@
+body, header {
+    margin: 0;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(24, 21, 21, 0.425);
+    padding: 0 10px; /* Añade un poco de padding para que no esté pegado a los bordes */
+}
+#Titutlo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(35, 63, 32);
+    cursor: default;
+}
+#Titutlo a:hover {
+    transform: none;
+    color: rgb(35, 63, 32); /* Mantiene el color original */
+}
+ul {
+    display: flex;
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Espacio entre los elementos del menú */
+    margin-left: auto; /* Mueve el menú a la derecha */
+}
+a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: rgb(35, 63, 32); /* Color del texto */
+    font-weight: bold;
+}
+a:hover {
+    transform: scale(1.1);
+    color: rgb(196, 19, 19); /* Color al pasar el ratón */
+}
+
+li {
+    color: rgb(0, 0, 0);
+}
+.logo {
+    height: 60px; /* Ajusta la altura según sea necesario */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+    padding-top: 10px;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    ul {
+        width: 100%;
+        margin-left: 0;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .logo {
+        margin: 0 auto; /* Centra el logo en pantallas pequeñas */
+        padding-top: 0;
+    }
+}
